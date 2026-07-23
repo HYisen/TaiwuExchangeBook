@@ -13,33 +13,31 @@
 
 ## Install
 
-### Download (easy)
-
 1. Subscribe to the [original mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2975299672) on Steam Workshop.
 2. Go to [Releases](../../releases) and download the latest `ExchangeBook.zip`.
 3. Extract into `<Steam>\steamapps\workshop\content\838350\2975299672\`, overwriting the existing files.
 4. Restart the game.
 
-## 构建
+## Build (for developers)
 
-### 前置
+### Prerequisites
 
-- [.NET 10 SDK](https://dotnet.microsoft.com/download)（或 .NET 8+）
-- 已安装《太吾绘卷》（Steam，App ID 838350）
+- [.NET 10 SDK](https://dotnet.microsoft.com/download) (or .NET 8+)
+- The Scroll of Taiwu installed (Steam, App ID 838350)
 
-### 编译
+### Compile
 
 ```bash
-# 后端（net8.0）
+# Backend (net8.0)
 dotnet build src/ExchangeBookBackend/ExchangeBookBackend.csproj -c Release
 
-# 前端（netstandard2.1）
+# Frontend (netstandard2.1)
 dotnet build src/ExchangeBook/ExchangeBook.csproj -c Release
 ```
 
-产物自动输出到 `mod/Plugins/`。
+Output goes to `mod/Plugins/`.
 
-如果游戏未装在 Steam 默认路径（注册表找不到），可通过 MSBuild 属性指定：
+If the game is not at the default Steam path, specify it explicitly:
 
 ```bash
 dotnet build /p:TaiwuGameDir="D:\Games\The Scroll Of Taiwu"
@@ -47,10 +45,10 @@ dotnet build /p:TaiwuGameDir="D:\Games\The Scroll Of Taiwu"
 
 ### Deploy
 
-Copy `mod/` into `<GameDir>/Mod/全门派换书/`:
+Copy `mod/` into the workshop folder to override the original:
 
 ```bash
-xcopy mod\* "G:\SteamLibrary\steamapps\common\The Scroll Of Taiwu\Mod\全门派换书\" /E /Y
+xcopy mod\* "<Steam>\steamapps\workshop\content\838350\2975299672\" /E /Y
 ```
 
 ## 项目结构
