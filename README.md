@@ -81,16 +81,9 @@ This fork was updated from 1.0.36 to 1.0.67 in a single session with a coding AI
 5. **Iterate with short feedback**. The AI's first IL patch had a stack imbalance. The human simply said "the error message changed" and the AI debugged and fixed it on its own. It then rebuilt the backend and patched the rest of the frontend source.
 6. **The AI deploys; the human tests**. The AI copied the fixed DLLs into `<GameDir>\Mod\全门派换书\`; the human launched the game and confirmed it worked.
 
-**What the human provided**: the mod path, a one-line tool preference ("install with scoop"), and one round of error feedback. Everything else — environment setup, decompilation, signature diffing, IL patching, source fixes, project scaffolding, build, and deployment — was autonomous.
+Everything else — environment setup, decompilation, signature diffing, IL patching, source fixes, project scaffolding, build, deployment, and GitHub release — was autonomous.
 
-## 致谢
+## Credits
 
-- 原始 Mod 作者：**p（发射的熟鸡蛋自用修复）**
-- This adapted version was **entirely done by AI**. The human only provided:
-  1. The mod path and "it's facing error since game update"
-  2. "install that with scoop" (for .NET SDK)
-  3. "the error message changed" (feedback after first IL patch failed)
-  4. Requests to create the GitHub repo, add fork note, use English where appropriate
-  5. Request to use `alex's AI` as the Git committer
-
-  Everything else — environment setup, decompilation, signature diffing, IL patching, source fixes, project scaffolding, build, deployment, and GitHub release — was autonomous.
+- Original mod author: **p（发射的熟鸡蛋自用修复）**
+- This fork entirely done by AI, with human input limited to: the mod path, "install with scoop", and "the error message changed"
