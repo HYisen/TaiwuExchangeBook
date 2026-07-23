@@ -2,6 +2,7 @@
 **/bin/
 **/obj/
 mod/Plugins/
+release/
 
 # Local config (copy from .example to customize)
 Directory.Build.props

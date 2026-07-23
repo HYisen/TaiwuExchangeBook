@@ -11,6 +11,25 @@
 - 可选"仅门派地格才能换书"（Config 设置项）
 - 修复了功法书遗留在 `_skillBooks` 字典中的内存泄漏问题
 
+## Install
+
+### Download (easy)
+
+1. Go to [Releases](../../releases) and download the latest `ExchangeBook.zip`.
+2. Extract into `<GameDir>\Mod\全门派换书\` so the structure looks like:
+   ```
+   Mod\全门派换书\
+   ├── Config.Lua
+   ├── cover.jpg
+   └── Plugins\
+       ├── ExchangeBook.dll
+       ├── ExchangeBook.pdb
+       ├── ExchangeBookBackend.dll
+       ├── ExchangeBookBackend.pdb
+       └── ExchangeBookBackend.deps.json
+   ```
+3. Enable in the game's Mod Manager.
+
 ## 构建
 
 ### 前置
