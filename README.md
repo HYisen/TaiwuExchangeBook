@@ -45,9 +45,9 @@ dotnet build src/ExchangeBook/ExchangeBook.csproj -c Release
 dotnet build /p:TaiwuGameDir="D:\Games\The Scroll Of Taiwu"
 ```
 
-### 部署
+### Deploy
 
-将 `mod/` 目录复制到 `<游戏根>/Mod/全门派换书/`：
+Copy `mod/` into `<GameDir>/Mod/全门派换书/`:
 
 ```bash
 xcopy mod\* "G:\SteamLibrary\steamapps\common\The Scroll Of Taiwu\Mod\全门派换书\" /E /Y
