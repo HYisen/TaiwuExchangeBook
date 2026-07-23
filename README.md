@@ -2,7 +2,7 @@
 
 《太吾绘卷：天幕心帷》Mod — 在门派界面添加"门派换书"和"技艺换书"按钮，方便兑换功法书和技艺书。
 
-> 此仓库是 Steam 创意工坊原 Mod [全门派换书](https://steamcommunity.com/sharedfiles/filedetails/?id=2975299672) 的社区维护分支，适配游戏最新版本。
+> Community fork of the original Steam Workshop mod [全门派换书](https://steamcommunity.com/sharedfiles/filedetails/?id=2975299672), updated for game version 1.0.67.
 
 ## 功能
 
@@ -65,4 +65,4 @@ mod/
 
 原始 Mod 作者：**p（发射的熟鸡蛋自用修复）**
 
-此仓库为社区维护版本，适配游戏最新版本。
+此仓库为社区维护版本，适配游戏 1.0.67。
