@@ -86,11 +86,11 @@ This fork was updated from 1.0.36 to 1.0.67 in a single session with a coding AI
 ## 致谢
 
 - 原始 Mod 作者：**p（发射的熟鸡蛋自用修复）**
-- 此适配版本**完全由 AI 完成**。人类仅提供了以下输入：
-  1. 指出 Mod 路径和"game update 后报错"
-  2. "install with scoop"（安装 .NET SDK）
-  3. "the error message changed"（反馈首次 IL patch 失败）
-  4. 要求创建 GitHub 仓库、添加 fork 说明、使用英文撰写部分内容
-  5. 要求使用 `alex's AI` 作为 Git 提交者
+- This adapted version was **entirely done by AI**. The human only provided:
+  1. The mod path and "it's facing error since game update"
+  2. "install that with scoop" (for .NET SDK)
+  3. "the error message changed" (feedback after first IL patch failed)
+  4. Requests to create the GitHub repo, add fork note, use English where appropriate
+  5. Request to use `alex's AI` as the Git committer
 
-  其余工作（环境搭建、反编译、签名对比、IL 修复、源码修正、工程配置、编译部署、Release 发布）均由 AI 自主完成。
+  Everything else — environment setup, decompilation, signature diffing, IL patching, source fixes, project scaffolding, build, deployment, and GitHub release — was autonomous.
