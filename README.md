@@ -61,6 +61,19 @@ mod/
 └── Config.Lua             # Mod 配置
 ```
 
+## How this fork was updated (AI-assisted)
+
+This fork was updated from 1.0.36 to 1.0.67 in a single session with a coding AI. To reproduce this workflow for another mod:
+
+1. **Point the AI at the broken mod**. The human gave the AI the mod's workshop folder path and said "it's facing error since game update."
+2. **Let the AI set up its own tools**. It detected .NET SDK was missing; the human told it "install that with scoop." It installed the SDK, then `ilspycmd`.
+3. **The AI reads the game logs on its own**. It found `MissingMethodException` on `RowItemLine.Set(RowItemMain, bool, bool)` in `Player.log`.
+4. **The AI decompiles and diffs signatures**. It decompiled both the mod's DLLs (which had `.pdb` files, giving high-quality output) and the current game's `Assembly-CSharp.dll`, then grep'd the decompiled source for the broken method to discover the new signature.
+5. **Iterate with short feedback**. The AI's first IL patch had a stack imbalance. The human simply said "the error message changed" and the AI debugged and fixed it on its own. It then rebuilt the backend and patched the rest of the frontend source.
+6. **The AI deploys; the human tests**. The AI copied the fixed DLLs into `<GameDir>\Mod\全门派换书\`; the human launched the game and confirmed it worked.
+
+**What the human provided**: the mod path, a one-line tool preference ("install with scoop"), and one round of error feedback. Everything else — environment setup, decompilation, signature diffing, IL patching, source fixes, project scaffolding, build, and deployment — was autonomous.
+
 ## 致谢
 
 原始 Mod 作者：**p（发射的熟鸡蛋自用修复）**
