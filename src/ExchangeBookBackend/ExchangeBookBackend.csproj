@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>ExchangeBookBackend</AssemblyName>
+    <RootNamespace>ExchangeBookBackend</RootNamespace>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <!--
+      Set TaiwuGameDir to your game root directory.
+      Options (in priority order):
+        1. dotnet build /p:TaiwuGameDir="D:\Steam\steamapps\common\The Scroll Of Taiwu"
+        2. Copy Directory.Build.props.example to Directory.Build.props and edit it
+        3. Set TAIWU_GAME_DIR environment variable
+    -->
+    <TaiwuGameDir Condition="'$(TaiwuGameDir)' == ''">$(TAIWU_GAME_DIR)</TaiwuGameDir>
+    <TaiwuSideDir>$(TaiwuGameDir)\Backend</TaiwuSideDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="GameData">
+      <HintPath>$(TaiwuSideDir)\GameData.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GameData.Common">
+      <HintPath>$(TaiwuSideDir)\GameData.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaiwuModdingLib">
+      <HintPath>$(TaiwuSideDir)\TaiwuModdingLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(TaiwuSideDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>$(TaiwuSideDir)\NLog.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GameData.Shared">
+      <HintPath>$(TaiwuSideDir)\GameData.Shared.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GameData.ArchiveData">
+      <HintPath>$(TaiwuSideDir)\GameData.ArchiveData.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputPath>..\..\mod\Plugins\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+</Project>

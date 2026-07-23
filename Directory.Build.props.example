@@ -1,0 +1,12 @@
+<!--
+  Copy this file to Directory.Build.props (user-local filename, gitignored)
+  and fill in your game path.
+  OR build with: dotnet build /p:TaiwuGameDir="D:\Steam\steamapps\common\The Scroll Of Taiwu"
+-->
+<Project>
+  <PropertyGroup>
+    <!-- Uncomment and set your path:
+    <TaiwuGameDir>D:\SteamLibrary\steamapps\common\The Scroll Of Taiwu</TaiwuGameDir>
+    -->
+  </PropertyGroup>
+</Project>

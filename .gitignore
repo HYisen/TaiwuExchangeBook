@@ -1,0 +1,22 @@
+# Build outputs
+**/bin/
+**/obj/
+mod/Plugins/
+
+# Local config (copy from .example to customize)
+Directory.Build.props
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+
+# Decompiled game sources (large, regeneratable)
+decompiled/
+knowledge-base/
+config/
+
+# OS
+Thumbs.db
+.DS_Store
