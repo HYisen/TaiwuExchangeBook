@@ -15,20 +15,10 @@
 
 ### Download (easy)
 
-1. Go to [Releases](../../releases) and download the latest `ExchangeBook.zip`.
-2. Extract into `<GameDir>\Mod\全门派换书\` so the structure looks like:
-   ```
-   Mod\全门派换书\
-   ├── Config.Lua
-   ├── cover.jpg
-   └── Plugins\
-       ├── ExchangeBook.dll
-       ├── ExchangeBook.pdb
-       ├── ExchangeBookBackend.dll
-       ├── ExchangeBookBackend.pdb
-       └── ExchangeBookBackend.deps.json
-   ```
-3. Enable in the game's Mod Manager.
+1. Subscribe to the [original mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2975299672) on Steam Workshop.
+2. Go to [Releases](../../releases) and download the latest `ExchangeBook.zip`.
+3. Extract into `<Steam>\steamapps\workshop\content\838350\2975299672\`, overwriting the existing files.
+4. Restart the game.
 
 ## 构建
 
